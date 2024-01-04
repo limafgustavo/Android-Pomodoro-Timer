@@ -3,6 +3,9 @@
     <style name="Base.Theme.MyPomodoroTimer" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/green_main</item>
+        <item name="colorButtonNormal">@color/white_main</item>
+        <item name="android:buttonStyle">@style/Widget.Material3.Button.OutlinedButton</item>
     </style>
 
     <style name="Theme.MyPomodoroTimer" parent="Base.Theme.MyPomodoroTimer" />
