@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <com.google.android.material.button.MaterialButton
@@ -80,9 +80,9 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/green_secondary"
             android:text="@string/pomodoro"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/button_short_break"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_short_break"
@@ -90,9 +90,9 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/green_main"
             android:text="@string/short_break"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/button_long_break"
-            app:layout_constraintStart_toEndOf="@id/button_pomodoro" />
+            app:layout_constraintTop_toBottomOf="@id/button_pomodoro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_long_break"
@@ -100,9 +100,10 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/green_main"
             android:text="@string/long_break"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/button_short_break" />
+            app:layout_constraintTop_toBottomOf="@id/button_short_break"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

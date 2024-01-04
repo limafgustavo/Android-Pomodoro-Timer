@@ -2,7 +2,7 @@
 <resources>
 
     <style name="top_buttons_size">
-        <item name="android:layout_width">36dp</item>
-        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
     </style>
 </resources>
